@@ -232,7 +232,55 @@
           </table>
         </div>
        </div>
+
+       <div class="mb-3 clearfix">
+         <nav aria-label="Navigate post pages" class="float-lg-right">
+           <ul class="pagination pagination-sm mb-lg-0">
+             <li class="page-item active"><a href="#0" class="page-link">1 <span class="sr-only">(current)</span></a></li>
+             <li class="page-item"><a href="#0" class="page-link">2</a></li>
+             <li class="page-item"><a href="#0" class="page-link">3</a></li>
+             <li class="page-item"><a href="#0" class="page-link">4</a></li>
+             <li class="page-item"><a href="#0" class="page-link">5</a></li>
+             <li class="page-item"><a href="#0" class="page-link">&hellip; 31</a></li>
+             <li class="page-item"><a href="#0" class="page-link">Next</a></li>
+           </ul>
+         </nav>
+         <form class="form-inline float-lg-left d-block d-sm-flex">
+           <div class="mb-2 mb-sm-0 mr-2">Display posts from previous:</div>
+           <div class="form-group mr-2">
+             <label for="select-time" class="sr-only">Time period</label>
+             <select id="select-time" class="form-control form-control-sm">
+               <option value="all-posts" selected>All posts</option>
+               <option value="day">1 day</option>
+               <option value="day">1 week</option>
+               <option value="day">1 month</option>
+               <option value="day">1 year</option>
+             </select>
+           </div>
+           <div class="mb-2 mb-sm-0 mr-2">Sort by:</div>
+           <div class="form-group mr-2">
+             <label for="select-sort" class="sr-only">Sort by</label>
+             <select id="select-sort" class="form-control form-control-sm">
+               <option value="author">Author</option>
+               <option value="post-time" selected>Post time</option>
+               <option value="replies">Replies</option>
+               <option value="subject">Subject</option>
+               <option value="views">Views</option>
+             </select>
+           </div>
+           <div class="form-group mr-2">
+             <label for="select-direction" class="sr-only">Sort direction</label>
+             <select id="select-direction" class="form-control form-control-sm">
+               <option value="ascending">Ascending</option>
+               <option value="descending" selected>Descending</option>
+             </select>
+           </div>
+           <button type="submit" class="btn btn-sm btn-primary">Go</button>
+         </form>
+       </div>
+       <a href="#0" class="btn btn-lg btn-primary">New topic</a>
      </div>
+
      <footer class="small bg-dark text-white">
        <div class="container py-4">
          <ul class="list-inline mb-0 text-center">
